@@ -9,6 +9,8 @@ export const useSettingsStore = defineStore('settingsStore', () => {
     const teams = useStorage('teams-name', ['Equipe Amarela', 'Equipe Azul'])
     const teamsMembers = useStorage('teams-members', [])
     const timerOnPieQuestions = ref(false)
+    const teamOnePieButtonIndex = useStorage('teamOnePieButtonIndex', 0)
+    const teamTwoPieButtonIndex = useStorage('teamTwoPieButtonIndex', 0)
 
     const setDefaultTimer = (value) => {
         defaultTimer.value = value
@@ -36,7 +38,9 @@ export const useSettingsStore = defineStore('settingsStore', () => {
         hideAnswerOverlay,
         timerOnPieQuestions,
         teams,
-        teamsMembers
+        teamsMembers,
+        teamOnePieButtonIndex,
+        teamTwoPieButtonIndex
     }
 
 })

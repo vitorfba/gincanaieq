@@ -19,6 +19,12 @@
     </button>
   </div>
 
+  <!-- <div class="row" v-if="question.points > 10">
+    <div class="col-12">
+      <AppJoystickPie />
+    </div>
+  </div> -->
+
   <AppAwnserOverlay :question="question" />
 </template>
 
@@ -26,6 +32,7 @@
 import { computed } from 'vue'
 import { useScoreBoardStore, useSettingsStore } from '@stores'
 import AppAwnserOverlay from './AppAwnserOverlay.vue'
+import AppJoystickPie from './AppJoystickPie.vue'
 
 const props = defineProps({
   question: {

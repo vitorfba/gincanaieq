@@ -94,13 +94,66 @@
         </div>
       </div>
     </div>
+
+    <div class="row mt-5" v-if="gamepadIsSupported">
+      <div class="col-12">
+        <div class="form-group">
+          <label for="questions">Numero do Botão do controle:</label>
+          <div v-if="gamepads.length === 0">
+            <div class="alert alert-warning" role="alert">
+              Conecte um controle para configurar os botões
+            </div>
+          </div>
+
+          <div v-if="gamepads.length > 0">
+            <span
+              v-for="(button, index) in gamepad.buttons"
+              :key="index"
+              class="badge text-bg-secondary mx-2 mt-2"
+              :class="{ 'text-bg-success': button.pressed }"
+            >
+              Botão {{ index }}
+            </span>
+          </div>
+
+          <div v-if="gamepads.length > 0" class="mt-2">
+            <div class="form-floating">
+              <input
+                type="number"
+                class="form-control"
+                v-model="settingsStore.teamOnePieButtonIndex"
+              />
+              <label for="floatingInputGroup1"
+                >Número do botão > {{ settingsStore.teams[0] }}</label
+              >
+            </div>
+            <br />
+            <div class="form-floating">
+              <input
+                type="number"
+                class="form-control"
+                v-model="settingsStore.teamTwoPieButtonIndex"
+              />
+              <label for="floatingInputGroup1"
+                >Número do botão > {{ settingsStore.teams[1] }}</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
+import { computed } from 'vue'
+import { useGamepad } from '@vueuse/core'
 import { useSettingsStore, useScoreBoardStore } from '@/stores'
 const settingsStore = useSettingsStore()
 const scoreBoardStore = useScoreBoardStore()
+
+const { isSupported: gamepadIsSupported, gamepads } = useGamepad()
+const gamepad = computed(() => gamepads.value.find((g) => g.mapping === 'standard'))
 
 const resetScoresAndQuestions = () => {
   scoreBoardStore.resetCompletedQuestions()
