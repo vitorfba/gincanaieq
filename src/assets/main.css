@@ -1,0 +1,295 @@
+@import './base.css';
+
+#app {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+  font-weight: normal;
+  color: #fff !important;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+a,
+.green {
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+small {
+  font-size: 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.header-logo {
+  width: 50%;
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+  }
+  .header-logo {
+    width: 100%;
+  }
+}
+
+.header-logo img {
+  width: 400px;
+  height: 50%;
+  object-fit: cover;
+}
+
+.app-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.scoreboard {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.scoreboard .team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+}
+
+.scoreboard .team-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.scoreboard .team-score {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.questions-container {
+  padding: 1rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 2rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+}
+
+.question-button:hover {
+  background-color: #b55460;
+  color: #fff;
+  border: 2px solid #b55460;
+}
+
+.disabled {
+  background-color: #838383 !important;
+  color: #535353 !important;
+  border: none;
+}
+
+.question-controls {
+  display: flex;
+}
+
+.question-controls a {
+  width: 100px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.question-timer {
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.question-timer .timer {
+  font-size: 3.5em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0d0430;
+  padding: 1rem;
+  border-radius: 20px;
+  border: 2px solid #fff;
+}
+
+.question-title {
+  text-align: center;
+  background-color: #0d0430;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.question-title h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.question-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.question-options button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 2rem;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.question-options button:hover {
+  background-color: #c6eaf3;
+  border: 2px solid #c6eaf3;
+}
+
+.awnser-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.awnser-overlay-correct {
+  background-color: rgb(17, 128, 23);
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.awnser-overlay-wrong {
+  background-color: rgb(128, 17, 23);
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.awnser-overlay-correct-answer {
+  text-align: center;
+}
+
+.awnser-overlay-buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.awnser-overlay-buttons button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 2rem;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.timeout {
+  background-color: #e91d1d !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+.app-footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 0 10px;
+}
+
+.app-footer a:hover {
+  background-color: hsla(256, 62%, 40%, 0.2);
+}
+
+/* VERTICAL LINE EXCEPT ON LAST A ITEM */
+.app-footer a:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+
+.awnser-overlay h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+}

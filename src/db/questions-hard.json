@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "id": 41,
+      "question": "Quantas vezes o rei Saul tentou matar Davi com uma lança, e em que livro está registrado esta história?",
+      "options": [
+        "Uma vez, registrado em 1 Samuel",
+        "Três vezes, registrado em 1 Samuel",
+        "Duas vezes, registrado em 1 Samuel",
+        "Quatro vezes, registrado em 2 Samuel"
+      ],
+      "answer": 2,
+      "points": 25
+    },
+    {
+      "id": 42,
+      "question": "Quais foram os três presentes dados pelos magos ao menino Jesus e em que livro está registrada história?",
+      "options": [
+        "Ouro, prata e mirra (Lucas)",
+        "Ouro, incenso e mirra (Mateus)",
+        "Ouro, incenso e óleo (João)",
+        "Ouro, mirra e especiarias (Marcos)"
+      ],
+      "answer": 1,
+      "points": 25
+    },
+    {
+      "id": 43,
+      "question": "Quantos anos Israel passou no deserto antes de entrar na Terra Prometida?",
+      "options": ["30 anos", "50 anos", "40 anos", "20 anos"],
+      "answer": 2,
+      "points": 25
+    },
+    {
+      "id": 44,
+      "question": "Quem foi a profetisa que julgou Israel e liderou uma batalha contra os cananeus? E em que livro está registrada esta história?",
+      "options": [
+        "Ana, registrado em Juízes 4",
+        "Hulda, registrado em Juízes 4",
+        "Débora, registrado em Juízes 4",
+        "Miriã, registrado em Juízes 4"
+      ],
+      "answer": 2,
+      "points": 25
+    },
+    {
+      "id": 45,
+      "question": "Qual era a relação entre Mardoqueu e Ester?",
+      "options": ["Pai de Ester", "Tio de Ester", "Primo de Ester", "Irmão de Ester"],
+      "answer": 2,
+      "points": 25
+    },
+    {
+      "id": 46,
+      "question": "Quem foram os três amigos de Jó que vieram consolá-lo?",
+      "options": [
+        "Elifaz, Bildade e Zofar",
+        "Eliú, Zofar e Elifaz",
+        "Bildade, Zofar e Eliú",
+        "Zofar, Eliú e Bildade"
+      ],
+      "answer": 0,
+      "points": 25
+    },
+    {
+      "id": 47,
+      "question": "Quem foi o primeiro mártir cristão?",
+      "options": ["Paulo", "Pedro", "Estevão", "Abinadabe"],
+      "answer": 2,
+      "points": 25
+    },
+    {
+      "id": 48,
+      "question": "Quantos anos Jó viveu após suas provações e onde está registrada esta história?",
+      "options": ["120 anos", "130 anos", "140 anos", "150 anos"],
+      "answer": 2,
+      "points": 25
+    },
+    {
+      "id": 49,
+      "question": "Em que capítulo Deus finalmente responde a Jó?",
+      "options": ["Capítulo 40", "Capítulo 38", "Capítulo 42", "Capítulo 36"],
+      "answer": 1,
+      "points": 25
+    },
+    {
+      "id": 50,
+      "question": "Qual era o nome do homem que carregou a cruz de Jesus?",
+      "options": ["Simão Pedro", "João de Patmos", "Simão de Cireneu", "José de Arimateia"],
+      "answer": 2,
+      "points": 25
+    }
+  ]
+}
