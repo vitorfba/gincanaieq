@@ -124,9 +124,9 @@
     },
     {
       "id": 17,
-      "question": "Quem recebeu os Dez Mandamentos de Deus?",
-      "options": ["Arão", "Davi", "Moisés", "Salomão"],
-      "answer": 2,
+      "question": "Quem os discípulos tentaram curar e não puderem por causa da sua pequena fé?",
+      "options": ["Cego de Jericó", "Lázaro", "Um jovem possesso", "Mulher com fluxo de sangue"],
+      "answer": 3,
       "points": 10
     },
     {
