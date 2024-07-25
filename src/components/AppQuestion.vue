@@ -19,11 +19,11 @@
     </button>
   </div>
 
-  <!-- <div class="row" v-if="question.points > 10">
+  <div class="row" v-if="question.points > 10">
     <div class="col-12">
       <AppJoystickPie />
     </div>
-  </div> -->
+  </div>
 
   <AppAwnserOverlay :question="question" />
 </template>

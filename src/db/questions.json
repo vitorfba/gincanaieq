@@ -29,8 +29,8 @@
     {
       "id": 4,
       "question": "Quem era o pai de Jacó?",
-      "options": ["Arão", "Joabe", "José", "Davi", "Isaque"],
-      "answer": 4,
+      "options": ["Joabe", "José", "Davi", "Isaque"],
+      "answer": 3,
       "points": 10
     },
     {
@@ -63,9 +63,9 @@
     },
     {
       "id": 9,
-      "question": "Quem construiu a arca para salvar sua família e os animais do dilúvio?",
-      "options": ["Abraão", "Moisés", "Noé", "José"],
-      "answer": 2,
+      "question": "Com o que Elias feriu as águas do Jordão e elas se dividiram?",
+      "options": ["Cajado", "Manto", "Espada", "Arco"],
+      "answer": 1,
       "points": 10
     },
     {
@@ -84,28 +84,28 @@
     },
     {
       "id": 12,
-      "question": "Qual foi a moeda usada para trair Jesus?",
+      "question": "Qual foi e quantas moedas foram usadas para trair Jesus?",
       "options": [
         "30 moedas de ouro",
         "50 moedas de prata",
         "30 moedas de prata",
-        "20 moedas de cobre"
+        "25 moedas de prata"
       ],
       "answer": 2,
       "points": 10
     },
     {
       "id": 13,
-      "question": "Quem foi traído por Judas Iscariotes?",
-      "options": ["João Batista", "Pedro", "Jesus", "Paulo"],
-      "answer": 2,
+      "question": "Quando Moisés foi colocado num cesto e lançado no rio, quem o encontrou?",
+      "options": ["Esposa de Faraó", "Soldado de Faraó", "Um morador das redondezas", "A filha do Faraó"],
+      "answer": 3,
       "points": 10
     },
     {
       "id": 14,
-      "question": "Quem matou Golias com uma pedra e uma funda?",
-      "options": ["Saul", "Davi", "Salomão", "Samuel"],
-      "answer": 1,
+      "question": "Como morreu Jezabel?",
+      "options": ["Lançada pela janela e atropelada", "Atacada por cães", "Comida por crocodilos", "Apedrejada por um profeta"],
+      "answer": 0,
       "points": 10
     },
     {
@@ -138,9 +138,9 @@
     },
     {
       "id": 19,
-      "question": "Quem foi o primeiro rei de Israel?",
-      "options": ["Davi", "Salomão", "Saul", "Samuel"],
-      "answer": 2,
+      "question": "Depois da sua prova, Jó teve 7 filhos e 3 filhas. Estas, eram as mulheres mais bonitas da terra. Quem eram elas?",
+      "options": ["Ada, Oolibama e Basemate.", "Ainoã, Quileabe e Maaca.", "Hadassa, Dina e Sulamita.", "Jemima, Quézia e Quéren-Hapuque."],
+      "answer": 3,
       "points": 10
     },
     {
@@ -152,16 +152,16 @@
     },
     {
       "id": 21,
-      "question": "Qual era o nome da mãe de Jesus?",
-      "options": ["Marta", "Maria", "Ana", "Isabel"],
-      "answer": 1,
+      "question": "Qual eram os nomes das noras de Noemi?",
+      "options": ["Rute e Raabe", "Raabe e Orfa", "Orfa e Rute", "Rute e Ana"],
+      "answer": 2,
       "points": 10
     },
     {
       "id": 22,
-      "question": "Quem foi a mãe de Samuel, o profeta?",
-      "options": ["Sara", "Ana", "Raquel", "Miriã"],
-      "answer": 1,
+      "question": "Onde os discípulos de Jesus foram pela primeira vez chamados de cristãos?",
+      "options": ["Antioquia", "Jerusalém", "Roma", "Corinto"],
+      "answer": 0,
       "points": 10
     },
     {
@@ -180,21 +180,21 @@
     },
     {
       "id": 25,
-      "question": "Qual é o nome do jardim onde Adão e Eva viveram?",
+      "question": "Qual o discípulo que acompanhou Jesus até a sua crucificação?",
       "options": [
-        "Jardim de Getsemani",
-        "Jardim do Éden",
-        "Jardim das Oliveiras",
-        "Jardim de Salém"
+        "Pedro",
+        "João",
+        "Tiago",
+        "Tomé"
       ],
       "answer": 1,
       "points": 10
     },
     {
       "id": 26,
-      "question": "Em que cidade Jesus nasceu?",
-      "options": ["Nazaré", "Jerusalém", "Belém", "Jericó"],
-      "answer": 2,
+      "question": "Quem matou um gigante que tinha 24 dedos?",
+      "options": ["Davi", "Jônatas", "Josué", "Melquizedeque"],
+      "answer": 1,
       "points": 10
     },
     {
@@ -296,7 +296,7 @@
     {
       "id": 40,
       "question": "Qual livro da Bíblia aborda sobre a reconstrução dos muros de Jerusalém?",
-      "options": ["Esdras", "Neemias", "Ester", "Rute"],
+      "options": ["Esdras", "Neemias", "Números", "Arquitetos"],
       "answer": 1,
       "points": 10
     }

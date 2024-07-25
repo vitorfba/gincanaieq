@@ -42,7 +42,7 @@ watch(gamepad, (newGamepad) => {
         <span text="2xl">Controles não são suportados neste dispositivos</span>
       </div>
     </div>
-    <div>
+    <div v-if="gamepads.length > 0">
       <div class="row text-center mt-4">
         <div class="col-6 border rounded" :class="{ 'bg-success': teamOnePressed }">
           <h1>{{ settingsStore.teams[0] }}</h1>

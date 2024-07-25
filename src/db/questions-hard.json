@@ -16,7 +16,7 @@
       "id": 42,
       "question": "Quais foram os três presentes dados pelos magos ao menino Jesus e em que livro está registrada história?",
       "options": [
-        "Ouro, prata e mirra (Lucas)",
+        "Ouro, prata e mirra (Mateus)",
         "Ouro, incenso e mirra (Mateus)",
         "Ouro, incenso e óleo (João)",
         "Ouro, mirra e especiarias (Marcos)"
@@ -35,8 +35,8 @@
       "id": 44,
       "question": "Quem foi a profetisa que julgou Israel e liderou uma batalha contra os cananeus? E em que livro está registrada esta história?",
       "options": [
-        "Ana, registrado em Juízes 4",
-        "Hulda, registrado em Juízes 4",
+        "Ana, registrado em Juízes 2",
+        "Hulda, registrado em Juízes 1",
         "Débora, registrado em Juízes 4",
         "Miriã, registrado em Juízes 4"
       ],
@@ -71,22 +71,22 @@
     },
     {
       "id": 48,
-      "question": "Quantos anos Jó viveu após suas provações e onde está registrada esta história?",
+      "question": "Quantos anos Jó viveu após suas provações?",
       "options": ["120 anos", "130 anos", "140 anos", "150 anos"],
       "answer": 2,
       "points": 25
     },
     {
       "id": 49,
-      "question": "Em que capítulo Deus finalmente responde a Jó?",
-      "options": ["Capítulo 40", "Capítulo 38", "Capítulo 42", "Capítulo 36"],
-      "answer": 1,
+      "question": "Quem, pela oração, teve sua vida aumentada por 15 anos?",
+      "options": ["Josafá", "Josué", "Ezequias", "Elias"],
+      "answer": 2,
       "points": 25
     },
     {
       "id": 50,
       "question": "Qual era o nome do homem que carregou a cruz de Jesus?",
-      "options": ["Simão Pedro", "João de Patmos", "Simão de Cireneu", "José de Arimateia"],
+      "options": ["Simão Pedro", "Bartolomeu", "Simão de Cireneu", "José de Arimateia"],
       "answer": 2,
       "points": 25
     }
