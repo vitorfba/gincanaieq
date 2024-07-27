@@ -1,16 +1,19 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
-import { useStorage } from '@vueuse/core'
+import { useStorage, useGamepad } from '@vueuse/core' 
 
 export const useSettingsStore = defineStore('settingsStore', () => {
  
-    const defaultTimer = ref(30)
+    const defaultTimer = useStorage('defaultTimer', 30)
     const anwserOverlay = ref(null) 
     const teams = useStorage('teams-name', ['Equipe Amarela', 'Equipe Azul'])
     const teamsMembers = useStorage('teams-members', [])
-    const timerOnPieQuestions = ref(false)
+    const timerOnPieQuestions = useStorage('timerOnPieQuestions', false)
     const teamOnePieButtonIndex = useStorage('teamOnePieButtonIndex', 0)
-    const teamTwoPieButtonIndex = useStorage('teamTwoPieButtonIndex', 0)
+    const teamTwoPieButtonIndex = useStorage('teamTwoPieButtonIndex', 0) 
+
+    const { gamepads, isSupported:gamepadIsSupported } = useGamepad()
+    const defaultGamepad = computed(() => gamepads.value[0])
 
     const setDefaultTimer = (value) => {
         defaultTimer.value = value
@@ -40,7 +43,9 @@ export const useSettingsStore = defineStore('settingsStore', () => {
         teams,
         teamsMembers,
         teamOnePieButtonIndex,
-        teamTwoPieButtonIndex
+        teamTwoPieButtonIndex,
+        defaultGamepad,
+        gamepadIsSupported 
     }
 
 })

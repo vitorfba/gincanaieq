@@ -16,7 +16,7 @@
     </div>
 
     <div class="question-container">
-      <AppQuestion :question="questionData" />
+      <AppQuestion :question="questionData" :timer="questionTimer" />
     </div>
   </div>
 </template>

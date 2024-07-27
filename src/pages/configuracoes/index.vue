@@ -94,20 +94,21 @@
         </div>
       </div>
     </div>
+ 
 
-    <div class="row mt-5" v-if="gamepadIsSupported">
+    <div class="row mt-5" v-if="settingsStore.gamepadIsSupported">
       <div class="col-12">
         <div class="form-group">
           <label for="questions">Numero do Botão do controle:</label>
-          <div v-if="gamepads.length === 0">
+          <div v-if="!defaultSettingsGamepad">
             <div class="alert alert-warning" role="alert">
               Conecte um controle para configurar os botões
             </div>
           </div>
 
-          <div v-if="gamepads.length > 0">
+          <div v-if="defaultSettingsGamepad">
             <span
-              v-for="(button, index) in gamepad.buttons"
+              v-for="(button, index) in defaultSettingsGamepad.buttons"
               :key="index"
               class="badge text-bg-secondary mx-2 mt-2"
               :class="{ 'text-bg-success': button.pressed }"
@@ -116,7 +117,7 @@
             </span>
           </div>
 
-          <div v-if="gamepads.length > 0" class="mt-2">
+          <div v-if="defaultSettingsGamepad" class="mt-2">
             <div class="form-floating">
               <input
                 type="number"
@@ -146,20 +147,20 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
-import { useGamepad } from '@vueuse/core'
+import { computed, onBeforeMount } from 'vue' 
 import { useSettingsStore, useScoreBoardStore } from '@/stores'
 const settingsStore = useSettingsStore()
 const scoreBoardStore = useScoreBoardStore()
 
-const { isSupported: gamepadIsSupported, gamepads } = useGamepad()
-const gamepad = computed(() => gamepads.value.find((g) => g.mapping === 'standard'))
+const defaultSettingsGamepad = computed(() => settingsStore.defaultGamepad)
 
 const resetScoresAndQuestions = () => {
   scoreBoardStore.resetCompletedQuestions()
   scoreBoardStore.resetScore()
   scoreBoardStore.resetCorrectQuestions()
 }
+
+ 
 </script>
 
 <style lang="scss" scoped></style>
