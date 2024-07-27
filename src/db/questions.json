@@ -131,8 +131,8 @@
     },
     {
       "id": 18,
-      "question": "Qual é o primeiro livro da Bíblia?",
-      "options": ["Êxodo", "Levítico", "Gênesis", "Deuteronômio"],
+      "question": "Qual é o segundo livro da Bíblia?",
+      "options": ["Gênesis", "Levítico", "Êxodo", "Deuteronômio"],
       "answer": 2,
       "points": 10
     },
